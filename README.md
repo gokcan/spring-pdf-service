@@ -38,3 +38,14 @@ CREATE TABLE IF NOT EXISTS user_roles (
 ##### *cd to downloaded file*
 ##### *mvn spring-boot:run*
 
+---
+### Endpoints
+
+##### localhost:8080/register 
+
+(default user has ROLE_ADMIN)
+
+##### localhost:8080/list-users 
+
+(The main functionality page, only ROLE_ADMIN users can access)
+
