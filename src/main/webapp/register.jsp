@@ -12,7 +12,7 @@
 
     <!-- Website Font style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../style2.css">
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
