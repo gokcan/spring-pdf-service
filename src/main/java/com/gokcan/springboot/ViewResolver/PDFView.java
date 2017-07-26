@@ -20,7 +20,7 @@ import java.util.Map;
 public class PDFView extends AbstractPDFView {
     @Override
     protected void buildPdfDocument(Map<String, Object> model, Document document, PdfWriter writer, HttpServletRequest request, HttpServletResponse response) throws Exception {
-        // change the file name
+
         response.setHeader("Content-Disposition", "attachment; filename=\"users-report.pdf\"");
 
         List<User> users = (List<User>) model.get("users");
