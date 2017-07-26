@@ -1,5 +1,6 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Repository;
 
+import com.gokcan.springboot.Model.UserRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

@@ -1,5 +1,7 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Service;
 
+import com.gokcan.springboot.Repository.UserRepository;
+import com.gokcan.springboot.Model.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -25,14 +27,14 @@ public class MyUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {
 
-        com.gokcan.springboot.User user = userRepository.findByUsername(username);
+        com.gokcan.springboot.Model.User user = userRepository.findByUsername(username);
         List<GrantedAuthority> authorities = buildUserAuthority(user.getUserRole());
 
         return buildUserForAuthentication(user, authorities);
 
     }
 
-    private User buildUserForAuthentication(com.gokcan.springboot.User user, List<GrantedAuthority> authorities) {
+    private User buildUserForAuthentication(com.gokcan.springboot.Model.User user, List<GrantedAuthority> authorities) {
         return new User(user.getUsername(), user.getPassword(), user.getEnabled(), true, true, true, authorities);
     }
 

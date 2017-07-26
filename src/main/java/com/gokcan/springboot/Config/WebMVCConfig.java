@@ -1,5 +1,7 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Config;
 
+import com.gokcan.springboot.ViewResolver.JSONViewResolver;
+import com.gokcan.springboot.ViewResolver.PDFViewResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

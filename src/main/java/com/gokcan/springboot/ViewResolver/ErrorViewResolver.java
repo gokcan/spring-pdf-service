@@ -1,4 +1,4 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.ViewResolver;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,4 +1,4 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.ViewResolver;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;

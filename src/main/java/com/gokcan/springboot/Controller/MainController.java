@@ -1,8 +1,14 @@
 /**
  * @author Skylifee7 on 20/07/2017.
  */
-package com.gokcan.springboot;
+package com.gokcan.springboot.Controller;
 
+import com.gokcan.springboot.ViewResolver.PDFView;
+import com.gokcan.springboot.Repository.RoleRepository;
+import com.gokcan.springboot.Repository.UserRepository;
+import com.gokcan.springboot.Model.User;
+import com.gokcan.springboot.Model.UserRole;
+import com.gokcan.springboot.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

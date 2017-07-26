@@ -1,4 +1,4 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Security;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

@@ -1,4 +1,6 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Service;
+
+import com.gokcan.springboot.Model.User;
 
 import java.util.List;
 

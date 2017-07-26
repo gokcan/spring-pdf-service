@@ -1,9 +1,10 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.ViewResolver;
 
 /**
  * @author Skylifee7 on 25/07/2017.
  */
 
+import com.gokcan.springboot.Model.User;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;

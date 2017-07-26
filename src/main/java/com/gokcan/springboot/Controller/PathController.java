@@ -1,4 +1,4 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

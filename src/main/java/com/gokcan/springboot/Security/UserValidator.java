@@ -1,5 +1,7 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Security;
 
+import com.gokcan.springboot.Model.User;
+import com.gokcan.springboot.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;

@@ -1,5 +1,9 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Service;
 
+import com.gokcan.springboot.Model.User;
+import com.gokcan.springboot.Repository.RoleRepository;
+import com.gokcan.springboot.Repository.UserRepository;
+import com.gokcan.springboot.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

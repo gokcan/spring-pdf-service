@@ -1,4 +1,4 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.ViewResolver;
 
 /**
  * @author Skylifee7 on 25/07/2017.

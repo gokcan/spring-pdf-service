@@ -1,4 +1,4 @@
-package com.gokcan.springboot;
+package com.gokcan.springboot.Security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

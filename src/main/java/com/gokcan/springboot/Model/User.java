@@ -1,7 +1,7 @@
 /**
  * @author Skylifee7 on 20/07/2017.
  */
-package com.gokcan.springboot;
+package com.gokcan.springboot.Model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
