@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css"
           href="webjars/datatables/1.10.15/css/jquery.dataTables.min.css"/>
 
-    <script src="../datatable.js"></script>
+    <script src="../js/datatable.js"></script>
 </head>
 
 <body style="

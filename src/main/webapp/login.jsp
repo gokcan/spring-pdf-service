@@ -20,7 +20,7 @@
 
     <!-- Website Font style -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../css/style2.css">
     c
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
@@ -96,7 +96,7 @@
 <script type="text/javascript"
         src="webjars/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
 
-<script type="text/javascript" src="../main.js"></script>
-<script type="text/javascript" src="../validator.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/validator.js"></script>
 </body>
 </html>
