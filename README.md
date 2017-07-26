@@ -51,3 +51,5 @@ CREATE TABLE IF NOT EXISTS user_roles (
 
 (The main functionality page, only ROLE_ADMIN users can access)
 
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+
