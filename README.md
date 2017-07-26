@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Skylifee7/Spring-Secured-PDF.svg?branch=master)](https://travis-ci.org/Skylifee7/Spring-Secured-PDF)
+### _Spring Secured_ PDF Creator [![Build Status](https://travis-ci.org/Skylifee7/Spring-Secured-PDF.svg?branch=master)](https://travis-ci.org/Skylifee7/Spring-Secured-PDF)
 
 ### Before Usage
 
