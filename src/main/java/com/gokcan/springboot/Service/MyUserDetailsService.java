@@ -1,7 +1,7 @@
 package com.gokcan.springboot.Service;
 
-import com.gokcan.springboot.Repository.UserRepository;
 import com.gokcan.springboot.Model.UserRole;
+import com.gokcan.springboot.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -1,7 +1,6 @@
 package com.gokcan.springboot.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.gokcan.springboot.Model.User;
 
 import javax.persistence.*;
 
