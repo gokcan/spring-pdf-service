@@ -7,6 +7,8 @@
 
 (if you want to define your own mysql user credentials change the ***application.properties*** file)
 
+Do not use "user = root" on production stage!
+
 Use below DDL statements to create database config
 
 ```sql
