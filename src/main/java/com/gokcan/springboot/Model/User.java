@@ -5,6 +5,8 @@ package com.gokcan.springboot.Model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Type;
+import org.hibernate.type.descriptor.sql.SmallIntTypeDescriptor;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -47,6 +49,7 @@ public class User {
         this.enabled = enabled;
     }
 
+    @Column(name = "password", nullable = false, length = 60)
     public String getPassword() {
         return password;
     }
@@ -55,6 +58,7 @@ public class User {
         this.password = password;
     }
 
+    @Column(name = "sex", length = 1)
     public String getSex() {
         return sex;
     }
@@ -65,7 +69,7 @@ public class User {
 
     @Id
     @Column(name = "username", unique = true,
-            nullable = false)
+            nullable = false, length = 45)
     public String getUsername() {
         return this.username;
     }
@@ -74,6 +78,7 @@ public class User {
         this.username = username;
     }
 
+    @Column(name = "email", nullable = false, length = 50)
     public String getEmail() {
         return email;
     }
