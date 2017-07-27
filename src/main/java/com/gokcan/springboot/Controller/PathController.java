@@ -1,5 +1,7 @@
 package com.gokcan.springboot.Controller;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,6 +31,10 @@ public class PathController {
     @GetMapping("/homePage")
     public ModelAndView homePage() {
         ModelAndView model = new ModelAndView();
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //Get logged in username
+
+        model.addObject("logged_in_username", name);
         model.setViewName("homePage");
         return model;
     }

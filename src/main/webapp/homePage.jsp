@@ -24,9 +24,11 @@
           href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 <body>
+
 <div class="alert alert-success" role="alert">
-    Welcome user! If you have Admin privileges you can <a href="${pageContext.request.contextPath}/list-users"
-                                                          class="alert-link">List users!
+    Welcome ${logged_in_username}! If you have Admin privileges you can <a
+        href="${pageContext.request.contextPath}/list-users"
+        class="alert-link">List users!
 </a> or you may want to <a href="javascript:document.getElementById('logout').submit()" class="alert-link">Logout :)</a>
 </div>
 
