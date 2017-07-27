@@ -39,11 +39,17 @@ public class PathSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin().loginPage("/login")
                 .passwordParameter("password")
                 .usernameParameter("username")
-                .successHandler(new SavedRequestAwareAuthenticationSuccessHandler());
+                .defaultSuccessUrl("/homePage")
+                .successHandler(savedRequestAwareAuthenticationSuccessHandler());
     }
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public SavedRequestAwareAuthenticationSuccessHandler savedRequestAwareAuthenticationSuccessHandler() {
+        return new SavedRequestAwareAuthenticationSuccessHandler();
     }
 }

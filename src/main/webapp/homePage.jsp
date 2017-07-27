@@ -7,14 +7,32 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<a href="${pageContext.request.contextPath}/userPage">JD User</a> | <a
-        href="${pageContext.request.contextPath}/adminPage">JD Admin</a> | <a
-        href="javascript:document.getElementById('logout').submit()">Logout</a>
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style2.css">
 
-<h3>Welcome to Skylife Systems</h3>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="alert alert-success" role="alert">
+    Welcome user! If you have Admin privileges you can <a href="${pageContext.request.contextPath}/list-users"
+                                                          class="alert-link">List users!
+</a> or you may want to <a href="javascript:document.getElementById('logout').submit()" class="alert-link">Logout :)</a>
+</div>
 
 <c:url value="/logout" var="logoutUrl"/>
 <form id="logout" action="${logoutUrl}" method="post">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 </form>
+</body>
+
