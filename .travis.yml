@@ -10,4 +10,8 @@ before_install:
 sudo: enabled
 dist: trusty
 
+<<<<<<< HEAD
 script: mvn clean verify
+=======
+script: mvn clean verify
+>>>>>>> 0420de007cdfddff5839c22f2f5f440e530b756b
