@@ -81,6 +81,14 @@
                         <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Login!</button>
                     </div>
 
+                    <div class="cols-sm-10">
+                        <div class="alert alert-warning" role="alert">
+                            Not have an account?
+                            <a href="${pageContext.request.contextPath}/register"
+                               class="alert-link">Register! </a>
+                        </div>
+                    </div>
+
                 </fieldset>
             </form>
         </div>
