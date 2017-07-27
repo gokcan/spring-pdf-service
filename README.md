@@ -1,56 +1,47 @@
-### _Spring Secured_ PDF Creator [![Build Status](https://travis-ci.org/Skylifee7/Spring-Secured-PDF.svg?branch=master)](https://travis-ci.org/Skylifee7/Spring-Secured-PDF)
+## _Spring Secured_ PDF Creator [![Build Status](https://travis-ci.org/Skylifee7/Spring-Secured-PDF.svg?branch=master)](https://travis-ci.org/Skylifee7/Spring-Secured-PDF)
 ---
-### Before Usage
+### Before Use
 
-##### mysql.server start
-
-##### Change mysql user to = root , password to = 987654321 
-
-(if you want to define your own mysql user credentials change the ***application.properties*** file)
-
-Do not use "user = root" on production stage!
-
-Use below DDL statements to create database config
-
-```sql
-CREATE DATABASE IF NOT EXISTS OBDB;
-USE OBDB;
-
-CREATE TABLE IF NOT EXISTS users (
-  username VARCHAR(45) NOT NULL ,
-  password VARCHAR(60) NOT NULL ,
-  email VARCHAR(50) NOT NULL,
-  date date,
-  sex smallint,
-  enabled boolean,
-  PRIMARY KEY (username));
-
-CREATE TABLE IF NOT EXISTS user_roles (
-  user_role_id int(11) NOT NULL AUTO_INCREMENT,
-  username varchar(45) NOT NULL,
-  role varchar(45) NOT NULL,
-  PRIMARY KEY (user_role_id),
-  UNIQUE KEY uni_username_role (role,username),
-  KEY fk_username_idx (username),
-  CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES users (username));
 ```
+mysql.server start
+```
+
+#### Also change mysql user to = root , password to = 987654321 
+
+(if you want to define your own mysql user credentials change the [application.properties](../master/src/main/resources/application.properties) file.
+
+Do not use "user = __root__" on production stage!
+
 ---
-### Usage
+### How to play with this project
 
-##### *clone | download repository*
-##### *cd to downloaded file*
-##### *mvn spring-boot:run*
+#### Just execute it with maven
 
+```
+git clone https://github.com/Skylifee7/Spring-Secured-PDF.git
+cd Spring-Secured-PDF
+mvn spring-boot:run
+```
 ---
 ### Endpoints
 
-##### localhost:8080/register 
+```
+GET localhost:8080/ (Entry Point)
+```
+```
+GET localhost:8080/register 
+```
+```
+GET localhost:8080/login
+```
+```
+GET localhost:8080/list-users
+```
 
-(default user has ROLE_ADMIN)
+> "List Users in a table" and "Download PDF" features are not allowed to normal users. 
+> On the other hand, freshly registered users have the __Admin__ role by default.
 
-##### localhost:8080/list-users 
-
-(The main functionality page, only ROLE_ADMIN users can access)
+> However you can change this [logic](../master/src/main/java/com/gokcan/springboot/Controller/MainController.java#L53) and tailor it to your needs.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
