@@ -41,7 +41,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                             <input type="text" class="form-control" name="username" id="username"
-                                   data-remote="../validate"
+                                   data-remote="../JAFRutr!CA-4es-u8reS/validate"
                                    placeholder="Enter your Username" data-remote-error="Username exists!" required/>
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 

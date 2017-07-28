@@ -67,7 +67,7 @@ public class MainController {
         return new ModelAndView(new PDFView(), model);
     }
 
-    @GetMapping(path = "/validate")
+    @GetMapping(path = "/JAFRutr!CA-4es-u8reS/validate")
     public ResponseEntity validate(@RequestParam String username, HttpServletResponse res) throws IOException {
 
         if (userRepository.findByUsername(username) != null) {

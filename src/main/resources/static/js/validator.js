@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#registration_form').validator({
-        delay: 600,
+        delay: 400,
         html: false,
         // disable submit button if there's invalid form
         disable: true,

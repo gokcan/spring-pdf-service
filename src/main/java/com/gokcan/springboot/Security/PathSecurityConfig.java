@@ -11,6 +11,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
@@ -29,10 +34,13 @@ public class PathSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http
+                .cors().and().csrf()
+                .and()
                 .authorizeRequests()
                 .antMatchers("/homePage").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
                 .antMatchers("/adminPage").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/list-users").access("hasRole('ROLE_ADMIN')")
+                .antMatchers("/download").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/register").permitAll()
                 .antMatchers("/login").permitAll()
                 .and()
@@ -41,6 +49,16 @@ public class PathSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("username")
                 .defaultSuccessUrl("/homePage")
                 .successHandler(savedRequestAwareAuthenticationSuccessHandler());
+    }
+
+    @Bean
+    CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowedOrigins(Arrays.asList("https://localhost:8080"));
+        configuration.setAllowedMethods(Arrays.asList("GET", "POST"));
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
     }
 
     @Bean
