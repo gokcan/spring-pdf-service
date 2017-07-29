@@ -1,13 +1,23 @@
+sudo: enabled
+dist: trusty
+
 language: java
+
 jdk:
   - oraclejdk8
 services:
   - mysql
   
+addons:
+  sonarcloud:
+    organization: "skylifee7-github"
+    token: $SONAR_TOKEN  
+    
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS OBDB;'
- 
-sudo: enabled
-dist: trusty
 
-script: mvn clean verify
+script: 
+  - mvn clean verify
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+  - sonar-scanner
+  
