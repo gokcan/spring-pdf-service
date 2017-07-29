@@ -22,9 +22,7 @@ public class GenericErrorViewResolver implements ErrorViewResolver {
         int status = httpStatus.value();
 
         if (httpStatus.is4xxClientError()) {
-
-            System.out.println(status);
-
+            
             if (status == 403) {
                 modelAndView.setViewName("Error403");
             } else if (status == 404) {
