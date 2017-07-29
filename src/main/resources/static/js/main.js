@@ -12,10 +12,10 @@ $(document).ready(function () {
 
 function fire_ajax_submit() {
 
-    var search = {};
-    search[.username] = $("#username").val();
-    //search[.email"] = $("#email").val();
-
+    var search = {"username": "user-test"};
+    //search[.'username'] = $("#username").val();
+    //search[.'email'] = $("#email").val();
+    
     $("#btn-search").prop("disabled", true);
 
     $.ajax({

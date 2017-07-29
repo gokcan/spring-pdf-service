@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // noinspection JSUnusedLocalSymbols
     $('#datePicker')
         .datepicker({
             autoclose: true,

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayOutputStream;
 import java.util.Map;
 
-public abstract class AbstractPDFView extends AbstractView {
+abstract class AbstractPDFView extends AbstractView {
 
     AbstractPDFView() {
         setContentType("application/pdf");
