@@ -1,5 +1,6 @@
 package com.gokcan.springboot.ViewResolver;
 
+import org.springframework.boot.autoconfigure.web.ErrorViewResolver;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.ModelAndView;
@@ -11,7 +12,7 @@ import java.util.Map;
  * @author Skylifee7 on 25/07/2017.
  */
 @ControllerAdvice
-public class ErrorViewResolver implements org.springframework.boot.autoconfigure.web.ErrorViewResolver {
+public class GenericErrorViewResolver implements ErrorViewResolver {
 
     @Override
     public ModelAndView resolveErrorView(HttpServletRequest request,

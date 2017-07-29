@@ -22,10 +22,10 @@ $(document).ready(function () {
                     } else if (data === "0") {
                         return "Female";
                     } else {
-                        return "N/A"
+                        return "N/A";
                     }
                 }
             }
         ]
-    })
+    });
 });
