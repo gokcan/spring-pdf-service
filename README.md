@@ -18,7 +18,7 @@ Do not use "user = __root__" on production stage!
 #### Just execute it with maven
 
 ```
-git clone https://github.com/Skylifee7/Spring-Secured-PDF.git
+git clone https://github.com/gokcan/Spring-Secured-PDF.git
 cd Spring-Secured-PDF
 mvn spring-boot:run
 ```
