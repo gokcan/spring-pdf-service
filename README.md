@@ -1,4 +1,4 @@
-## _Spring Secured_ PDF Creator [![Build Status](https://travis-ci.org/gokcan/Spring-Secured-PDF.svg?branch=master)](https://travis-ci.org/gokcan/Spring-Secured-PDF) [![bitHound Overall Score](https://www.bithound.io/github/gokcan/Spring-Secured-PDF/badges/score.svg)](https://www.bithound.io/github/gokcan/Spring-Secured-PDF)[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.gokcan:springboot)](https://sonarcloud.io/dashboard/index/com.gokcan%3Aspringboot)
+## _Spring Secured_ PDF Creator [![Build Status](https://travis-ci.org/gokcan/spring-pdf-service.svg?branch=master)](https://travis-ci.org/gokcan/spring-pdf-service)[![bitHound Overall Score](https://www.bithound.io/github/gokcan/spring-pdf-service/badges/score.svg)](https://www.bithound.io/github/gokcan/spring-pdf-service)[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.gokcan:springboot)](https://sonarcloud.io/dashboard/index/com.gokcan%3Aspringboot)
 ---
 ### Before Use
 
